@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R ls -l
+chmod -R 111 ./*
