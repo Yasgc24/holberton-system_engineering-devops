@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "num=$((128 + (echo $(export TRUEKNOWLEDGE))))"
