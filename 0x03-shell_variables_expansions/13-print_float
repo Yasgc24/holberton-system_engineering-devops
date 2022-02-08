@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $NUM=(echo "scale=2")
+printf " %0.2f " $NUM
