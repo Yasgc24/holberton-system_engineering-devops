@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # SSH client configuration.
 Host school
-    HostName 34.224.57.165
+    HostName 54.227.113.133
     User ubuntugit
