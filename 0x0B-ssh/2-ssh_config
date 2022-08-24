@@ -2,4 +2,4 @@
 # SSH client configuration.
 Host school
     HostName 34.224.57.165
-    User ubuntu
+    User ubuntugit
