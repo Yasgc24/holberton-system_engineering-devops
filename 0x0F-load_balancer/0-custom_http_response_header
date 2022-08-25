@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Set up nginx web server into 4521-web-01 server.
+# Set up nginx web server into 4537-web-02 server.
 sudo apt -y update
 sudo apt -y upgrade
 sudo apt -y install nginx
