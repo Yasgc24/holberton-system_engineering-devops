@@ -11,6 +11,6 @@ echo "frontend load_balancer
         default_backend web-servers
     backend web-servers
         balance roundrobin
-        server 4537-web-01 54.227.113.133 check
-        server 4537-web-02 184.73.20.152 check" >> /etc/haproxy/haproxy.cfg
+        server 4537-web-01 54.227.113.133:80 check
+        server 4537-web-02 184.73.20.152:80 check" >> /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
