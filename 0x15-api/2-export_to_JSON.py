@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Script to export data in the JSON format."""
+import json
 import requests
 from sys import argv
-import json
 
 
 if __name__ == "__main__":
