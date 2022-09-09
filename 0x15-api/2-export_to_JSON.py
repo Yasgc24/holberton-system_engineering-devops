@@ -6,9 +6,10 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    user_url = "https://jsonplaceholder.typicode.com/users/{}".format(argv[1])
+    id = argv[1]
+    user_url = "https://jsonplaceholder.typicode.com/users/{}".format(id)
     todos_url = "https://jsonplaceholder.typicode.com/users/{}/todos".format(
-        argv[1])
+        id)
 
     with requests.session() as session:
         tasks = session.get(todos_url).json()
@@ -26,7 +27,7 @@ if __name__ == "__main__":
             }
             list_data.append(data)
 
-        text_file = "{}.json".format(argv[1])
+        text_file = "{}.json".format(id)
         with open(text_file, mode="w+", encoding="utf-8") as file:
-            data_id = {argv[1]: list_data}
+            data_id = {id: list_data}
             json.dump(data_id, file)

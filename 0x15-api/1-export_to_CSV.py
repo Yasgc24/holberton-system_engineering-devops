@@ -5,9 +5,10 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    user_url = "https://jsonplaceholder.typicode.com/users/{}".format(argv[1])
+    id = argv[1]
+    user_url = "https://jsonplaceholder.typicode.com/users/{}".format(id)
     todos_url = "https://jsonplaceholder.typicode.com/users/{}/todos".format(
-        argv[1])
+        id)
 
     with requests.session() as session:
         response_tasks = session.get(todos_url)
@@ -22,7 +23,7 @@ if __name__ == "__main__":
             completed = record["completed"]
             title = record["title"]
             data += '"{}","{}","{}","{}"\n'.format(
-                argv[1], username, completed, title)
-        text_file = "{}.cvs".format(argv[1])
+                id, username, completed, title)
+        text_file = "{}.cvs".format(id)
         with open(text_file, mode="w+", encoding="utf-8") as file:
             file.write(data)
