@@ -1,9 +1,6 @@
 # 0x01. Shell, permissions
 ***
 
-![image](https://user-images.githubusercontent.com/98331961/199128176-219f803b-37e5-4b6a-9d16-575a1ef48c74.png)
-
-
 ## Permissions
 ***
 * What do the commands chmod, sudo, su, chown, chgrp do
